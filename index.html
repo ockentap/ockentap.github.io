@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ockentap — small, sharp software</title>
+<meta name="description" content="Android apps, Bluetooth-mesh tooling and AI-agent infrastructure. No hubs, no clouds you didn't ask for, no analytics.">
+<meta name="theme-color" content="#07080b">
+<link rel="icon" href="assets/mark.png">
+<meta property="og:title" content="ockentap — small, sharp software">
+<meta property="og:description" content="Android apps, Bluetooth-mesh tooling and AI-agent infrastructure. No hubs, no clouds you didn't ask for, no analytics.">
+<meta property="og:image" content="assets/mark.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/mark.png" alt="">ockentap</a>
+    <span class="spacer"></span>
+    <a class="link" href="#projects">Projects</a>
+    <a class="link" href="#how">How I build</a>
+    <a class="link" href="#about">About</a>
+    <a class="cta" href="https://github.com/ockentap" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <div class="eyebrow">Android · Bluetooth Mesh · Agent Infrastructure</div>
+    <h1>Small, sharp software that <span class="grad">does one thing properly</span>.</h1>
+    <p class="lede">I build apps and tools that replace bloated ones. An Android app that talks to a mesh bulb's radio <strong>with no network permission at all</strong>. A 2.5 MB bulb controller for the job a 500 MB vendor app does. A memory architecture for AI agents that trades context tokens for files on disk. Same instinct every time: <strong>cut the middle, keep the function</strong>.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/ockentap" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A7.99 7.99 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        All projects on GitHub
+      </a>
+      <a class="btn" href="https://x.com/ockentap" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+        Follow on X
+      </a>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><b>2.5 MB</b><span>aBulb download — vendor equivalent is ~500 MB</span></div>
+      <div class="fact"><b>No network permission</b><span>aBulb and aPhoto ship with zero internet access</span></div>
+      <div class="fact"><b>~500 tokens</b><span>resident memory index for an AI agent, rest on disk</span></div>
+      <div class="fact"><b>7 public projects</b><span>Android, Python, browser tooling</span></div>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">01</span>
+        <h2>Projects</h2>
+        <span class="note">Every one of these exists because the alternative was worse.</span>
+      </div>
+
+      <div class="grid">
+
+        <!-- aBulb -->
+        <article class="card media">
+          <div class="shot"><img src="assets/screens/abulb-screen.png" alt="aBulb running on a phone" loading="lazy"></div>
+          <div class="card-top">
+            <img class="icon" src="assets/icons/abulb.png" alt="" loading="lazy">
+            <div><h3>aBulb</h3><div class="kind">Android · Bluetooth Mesh</div></div>
+          </div>
+          <p>Control a Bluetooth-mesh bulb straight from the phone — no hub, no cloud, no account. The app joins the mesh as a proxy client and drives the standard Light Lightness model; it can provision a factory-fresh bulb on its own.</p>
+          <ul>
+            <li>2.5 MB to download, Android 8.0+</li>
+            <li>No network permission at all — nothing to phone home with</li>
+            <li>Pairs with real hardware, tested on a LEDVANCE Smart+ bulb</li>
+          </ul>
+          <div class="chips"><span class="chip">Kotlin</span><span class="chip">Bluetooth SIG Mesh</span><span class="chip">GATT proxy</span><span class="chip">no-cloud</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/aBulb" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- aKlima -->
+        <article class="card">
+          <div class="card-top">
+            <img class="icon" src="assets/icons/aklima.png" alt="" loading="lazy">
+            <div><h3>aKlima</h3><div class="kind">Android · IoT cloud</div></div>
+          </div>
+          <p>A lightweight replacement for the ConnectLife / Hisense app. Controls a split air conditioner through the same cloud the vendor app uses — without the vendor app.</p>
+          <ul>
+            <li>Nine screens of settings reduced to one, plus a <em>⋯</em> sheet</li>
+            <li>~10 MB installed, next to hundreds of megabytes for the official app</li>
+            <li>Two units on one account are one tap apart; no analytics, no third-party servers</li>
+          </ul>
+          <div class="chips"><span class="chip">Kotlin</span><span class="chip">Compose</span><span class="chip">OAuth</span><span class="chip">ConnectLife cloud</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/aKlima" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- aPhoto -->
+        <article class="card">
+          <div class="card-top">
+            <img class="icon" src="assets/icons/aphoto.png" alt="" loading="lazy">
+            <div><h3>aPhoto</h3><div class="kind">Android · privacy</div></div>
+          </div>
+          <p>Show someone a photo without handing them your gallery. aPhoto displays the photos you picked and nothing else — no grid, no next folder, no way to scroll into anything you didn't choose.</p>
+          <ul>
+            <li>Fingerprint or screen lock before the gallery opens</li>
+            <li>No storage, media or internet permission — nothing in the app talks to anything</li>
+            <li>Up to 20 photos, swipe and pinch-zoom, ~7.5 MB</li>
+          </ul>
+          <div class="chips"><span class="chip">Kotlin</span><span class="chip">Compose</span><span class="chip">BiometricPrompt</span><span class="chip">zero permissions</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/aPhoto" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- hermes-dynamic-memory -->
+        <article class="card media">
+          <div class="chart"><img src="assets/charts/resident-cost.svg" alt="Resident context cost benchmark chart" loading="lazy"></div>
+          <div class="card-top">
+            <div class="icon mono">dm</div>
+            <div><h3>hermes-dynamic-memory</h3><div class="kind">Python · AI agent infrastructure</div></div>
+          </div>
+          <p>A two-tier memory architecture for AI agents: a ~500-token keyword index in the system prompt, with verbose detail living in topic files on disk, routed by keyword.</p>
+          <ul>
+            <li>Replaces a hard 2,200-character memory cap that silently truncates facts</li>
+            <li>Plugin-enforced integrity — the index can't drift from the files</li>
+            <li>Benchmarked honestly against stock memory, raw answers and failed runs published</li>
+          </ul>
+          <div class="chips"><span class="chip">Python</span><span class="chip">context engineering</span><span class="chip">benchmarks</span><span class="chip">plugin hooks</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/hermes-dynamic-memory" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- Site Control -->
+        <article class="card">
+          <div class="card-top">
+            <img class="icon" src="assets/icons/sitecontrol.png" alt="" loading="lazy">
+            <div><h3>Site Control</h3><div class="kind">Chromium extension · agent bridge</div></div>
+          </div>
+          <p>A Manifest V3 extension whose side panel talks to a local agent: you type an instruction, the agent reads the page, acts on it and replies — all inside the browser you're already in.</p>
+          <ul>
+            <li>Drives real pages from natural language, not a separate sandbox browser</li>
+            <li>Local WebSocket bridge to the agent, no third-party relay</li>
+            <li>Every action is visible in the side panel as it happens</li>
+          </ul>
+          <div class="chips"><span class="chip">Chrome MV3</span><span class="chip">WebSocket</span><span class="chip">Python agent</span><span class="chip">CDP</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/hermes-browser-control" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- IA bulk upload -->
+        <article class="card">
+          <div class="card-top">
+            <div class="icon mono">ia</div>
+            <div><h3>Archive Bulk Upload</h3><div class="kind">Python · CLI</div></div>
+          </div>
+          <p>An interactive script for bulk-uploading collections to the Internet Archive, with a directory browser and a terminal UI that makes hundreds of files painless.</p>
+          <ul>
+            <li>All dependencies bundled — clone it and run it</li>
+            <li>Guided directory browsing instead of hand-written metadata flags</li>
+            <li>Most-starred project here, used by people who found it on its own</li>
+          </ul>
+          <div class="chips"><span class="chip">Python</span><span class="chip">CLI</span><span class="chip">Internet Archive API</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/Internet-Archive-CLI-Bulk-Upload-Script" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+        <!-- AV1 -->
+        <article class="card">
+          <div class="card-top">
+            <div class="icon mono">av1</div>
+            <div><h3>AV1-Everything</h3><div class="kind">Python · video</div></div>
+          </div>
+          <p>Recursive folder-to-AV1 encoding on top of FFmpeg — point it at a tree of videos and walk away. A fork I extended for my own encoding runs.</p>
+          <ul>
+            <li>Batch encodes whole directories with sane defaults</li>
+            <li>Built for long unattended runs</li>
+          </ul>
+          <div class="chips"><span class="chip">FFmpeg</span><span class="chip">AV1</span><span class="chip">batch</span></div>
+          <div class="links">
+            <a href="https://github.com/ockentap/AV1-Everything" target="_blank" rel="noopener">Repository →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">02</span>
+        <h2>How I build</h2>
+        <span class="note">The pattern behind the project list.</span>
+      </div>
+      <div class="caps">
+        <div class="cap"><span class="k">/ android</span><h4>Native apps that stay small</h4><p>Kotlin and Compose, sized against what the vendor app costs you in megabytes and permissions. If a feature needs a cloud, it should be a cloud the user already has.</p></div>
+        <div class="cap"><span class="k">/ radio</span><h4>Protocols, not middlemen</h4><p>Bluetooth LE and Bluetooth SIG Mesh at the GATT level: provisioning, proxy clients, vendor model quirks. The interesting bugs are always on the wire.</p></div>
+        <div class="cap"><span class="k">/ agents</span><h4>AI-agent infrastructure</h4><p>Memory architecture, context budgets, browser control and plugin-enforced invariants for agents that run unattended — plus benchmarks that survive scrutiny.</p></div>
+        <div class="cap"><span class="k">/ infra</span><h4>Self-hosted, end to end</h4><p>Linux servers, systemd units, Tailscale networks, containers and cron watchdogs. If it matters, it runs on hardware I control.</p></div>
+        <div class="cap"><span class="k">/ tooling</span><h4>Automation with taste</h4><p>Python for the things worth automating, terminal UIs for the things worth using twice, and no service dependency where a script will do.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">03</span>
+        <h2>About</h2>
+      </div>
+      <div class="about">
+        <div>
+          <p>I'm <strong>ockentap</strong> (<strong>@ockentap</strong>) — a developer who builds for the gap between what software could be and what the vendor shipped.</p>
+          <p>The through-line across everything here is <strong>removing a layer that didn't need to exist</strong>: the hub between the phone and the bulb, the vendor app between you and your own air conditioner, the gallery between you and one photo, the 2,200-character cap between an agent and what it knows.</p>
+          <p>I'd rather ship something small that works on real hardware — a real bulb, a real air conditioner, a real server — than something large that works in a demo.</p>
+        </div>
+        <div class="panel">
+          <h5>Elsewhere</h5>
+          <div class="rowlist">
+            <a href="https://github.com/ockentap" target="_blank" rel="noopener">GitHub <span>@ockentap</span></a>
+            <a href="https://x.com/ockentap" target="_blank" rel="noopener">X <span>@ockentap</span></a>
+            <a href="https://github.com/ockentap/aBulb" target="_blank" rel="noopener">Start with aBulb <span>the mesh bulb app</span></a>
+            <a href="https://github.com/ockentap/hermes-dynamic-memory" target="_blank" rel="noopener">Agent memory write-up <span>benchmarks inside</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> ockentap — built by hand, no template, no trackers.</span>
+    <span class="spacer"></span>
+    <a href="https://github.com/ockentap" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/ockentap" target="_blank" rel="noopener">X</a>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
