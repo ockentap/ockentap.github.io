@@ -46,7 +46,7 @@
     <div class="facts">
       <div class="fact"><b>2.5 MB</b><span>aBulb download — vendor equivalent is ~500 MB</span></div>
       <div class="fact"><b>No network permission</b><span>aBulb and aPhoto ship with zero internet access</span></div>
-      <div class="fact"><b>~500 tokens</b><span>resident memory index for an AI agent, rest on disk</span></div>
+      <div class="fact"><b>Dynmem</b><span>agent memory: ~500 tokens in the prompt, the rest on disk</span></div>
       <div class="fact"><b>7 public projects</b><span>Android, Python, browser tooling</span></div>
     </div>
   </div>
@@ -124,9 +124,9 @@
           <div class="chart"><img src="assets/charts/resident-cost.svg" alt="Resident context cost benchmark chart" loading="lazy"></div>
           <div class="card-top">
             <div class="icon mono">dm</div>
-            <div><h3>hermes-dynamic-memory</h3><div class="kind">Python · AI agent infrastructure</div></div>
+            <div><h3>Dynamic Memory</h3><div class="kind">Dynmem · Python · AI agent infrastructure</div></div>
           </div>
-          <p>A two-tier memory architecture for AI agents: a ~500-token keyword index in the system prompt, with verbose detail living in topic files on disk, routed by keyword.</p>
+          <p>Dynmem — a two-tier memory architecture for AI agents. A ~500-token index sits in the system prompt; the verbose detail lives in topic files on disk, routed by keyword.</p>
           <ul>
             <li>Replaces a hard 2,200-character memory cap that silently truncates facts</li>
             <li>Plugin-enforced integrity — the index can't drift from the files</li>
